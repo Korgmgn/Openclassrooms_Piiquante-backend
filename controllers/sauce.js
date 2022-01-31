@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
 exports.createSauce = (req, res, next) => {
+    console.log('requête arrivée au serveur')
     const sauceObject = JSON.parse(req.body.sauce);
     delete sauceObject._id; 
     const sauce = new Sauce({
@@ -11,7 +12,7 @@ exports.createSauce = (req, res, next) => {
     });
     sauce.save()
         .then(() => res.status(201).json({ message: 'Objet enregistré !'}))
-        .catch(error => res.status(400).json({ error }));
+        .catch(error => res.status(400).json({ error: 'Erreur survenue' }));
 };
 
 exports.modifySauce = (req, res, next) => {
