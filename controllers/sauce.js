@@ -1,4 +1,4 @@
-const Sauce = require('../models/Sauce');
+const Sauce = require('../models/sauce');
 const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
