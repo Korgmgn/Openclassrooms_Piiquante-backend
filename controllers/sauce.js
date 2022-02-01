@@ -3,7 +3,6 @@ const jwt = require('jsonwebtoken');
 const fs = require('fs');
 
 exports.createSauce = (req, res, next) => {
-    console.log('requête arrivée au serveur')
     const sauceObject = JSON.parse(req.body.sauce);
     delete sauceObject._id; 
     const sauce = new Sauce({
