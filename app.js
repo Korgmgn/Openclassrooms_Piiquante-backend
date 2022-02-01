@@ -5,7 +5,7 @@ const helmet = require('helmet');
 const path = require('path');
 const dotenv = require('dotenv');
 //On fait appel au .env afin de sécuriser les informations de connexion à la base de données
-dotenv.config();
+// dotenv.config();
 
 const sauceRoutes = require('./routes/sauce');
 const userRoutes = require('./routes/user');
