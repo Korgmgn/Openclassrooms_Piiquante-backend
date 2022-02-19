@@ -1,3 +1,3 @@
-Destiné au déploiement sur Heroku
+## Repository destiné au déploiement ##
 
-Pour cloner le projet et le prendre en main localement, faites le depuis ce [repository](https://github.com/Korgmgn/Openclassrooms_Piiquante)
+Pour tester localement, cloner ce repo: https://github.com/Korgmgn/Openclassrooms_Piiquante
